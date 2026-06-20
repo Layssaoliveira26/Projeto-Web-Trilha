@@ -25,7 +25,6 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--cor-fundo);
-  border-bottom: 2px solid var(--cor-preta);
   box-sizing: border-box;
   z-index: 999;
 }
