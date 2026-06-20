@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --cor-laranja: #d87a0f;
+  --cor-clara: #f7f4ee;
+  --cor-fundo: #1a1a1a;
+  --cor-preta: #000000;
+  --fonte-titulo: "Bebas Neue", sans-serif;
+  --fonte-texto: "Poppins", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--cor-fundo);
+  border-bottom: 2px solid var(--cor-preta);
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.logo {
+  font-family: var(--fonte-titulo);
+  font-size: 2rem;
+  color: var(--cor-clara);
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo span {
+  color: var(--cor-laranja);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin-right: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+.container-links {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.nav-links a {
+  font-family: var(--fonte-texto);
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--cor-clara);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--cor-laranja);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--cor-laranja);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.btn-inscreva {
+  font-family: var(--fonte-texto);
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: var(--cor-laranja);
+  color: var(--cor-clara);
+  border: none;
+  padding: 0.55rem 1.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.btn-inscreva:hover {
+  background-color: #b8670c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(216, 122, 15, 0.4);
+}
+
+.btn-inscreva:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0.75rem 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.85rem;
+  }
+
+  .nav-links {
+    gap: 0.9rem;
+  }
+
+  .container-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+  }
+
+  .container-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.75rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-right: 0;
+  }
+
+  .btn-inscreva {
+    padding: 0.5rem 1.25rem;
+  }
+}
