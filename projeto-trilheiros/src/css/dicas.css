@@ -109,6 +109,7 @@ img {
   font: 800 0.78rem/1 var(--fonte-corpo);
   color: var(--preto);
   background: rgba(255, 255, 255, 0.28);
+  margin: 20px auto 0;
   padding: 8px 20px;
   border-radius: 999px;
   animation: subirDesvanecer 0.7s var(--transicao) 0.05s forwards;
