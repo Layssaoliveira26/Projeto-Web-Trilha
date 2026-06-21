@@ -1,0 +1,47 @@
+.tf-footer {
+  background-color: #1e1c1a; 
+  border-top: 2px solid var(--tl-laranja);
+  padding: 25px 0; 
+}
+
+.tf-footer__conteudo { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.tf-footer__brand { 
+  font-family: var(--tl-fonte-display); 
+  font-size: 1.5rem; 
+  letter-spacing: 1px; 
+}
+
+.tf-footer__brand--claro { 
+  color: #e0ddd6; 
+}
+
+.tf-footer__brand--laranja { 
+  color: var(--tl-laranja); 
+}
+
+.tf-footer__copy { 
+  font-size: 0.8rem; 
+  color: #777777; 
+}
+
+@media (max-width: 768px) {
+  .tf-footer__conteudo { 
+    flex-direction: column; 
+    gap: 15px; 
+    text-align: center; 
+  }
+}
+
+.tf-footer__conteudo {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
