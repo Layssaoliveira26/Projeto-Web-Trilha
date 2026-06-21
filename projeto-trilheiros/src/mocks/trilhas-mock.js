@@ -9,7 +9,7 @@ export const trilhas = [
         duracao: "1,5h",
         altitude: "416 m",
         descricao: "A trilha símbolo de Quixadá. Uma pedra perfeitamente equilibrada no topo cria a silhueta inconfundível de uma galinha chocando. Fácil acesso para toda a família.",
-        imagem: "/src/assets/galinha-choca.jpg",
+        imagem: "/assets/galinha-choca.jpg",
         linkMapa: "https://www.google.com/maps?q=Galinha+Choca+Quixadá"
     },
     {
@@ -22,7 +22,7 @@ export const trilhas = [
         duracao: "0,5h",
         altitude: "220 m",
         descricao: "Uma trilha tranquila e de fácil acesso que nos leva a um dos cenários mais icônicos de Quixadá: a famosa Caverna do Lemos.",
-        imagem: "/src/assets/lemos.jpg",
+        imagem: "/assets/lemos.jpg",
         linkMapa: "https://www.google.com/maps?q=Pedra+da+Galinha+Pacatuba"
     },
     {
@@ -35,7 +35,7 @@ export const trilhas = [
         duracao: "2,5h",
         altitude: "412 m",
         descricao: "A Trilha da Pedra Riscada é um percurso desafiador para quem busca aventura, famoso por dar acesso a grandes paredes rochosas conhecidas internacionalmente para a prática de escalada.",
-        imagem: "/src/assets/pedra riscada.png",
+        imagem: "/assets/pedra-riscada.png",
         linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
     },
     {
@@ -48,7 +48,7 @@ export const trilhas = [
         duracao: "1,5h",
         altitude: "330 m",
         descricao: "A Trilha da Psicose é um percurso de ecoturismo e aventura famoso pelas formações rochosas. A rota leva os visitantes até a famosa Janelinha da Psicose e é frequentemente combinada com a prática de rapel.",
-        imagem: "/src/assets/Trilha-Psicose.jpg",
+        imagem: "/assets/trilha-psicose.jpg",
         linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
     },
     {
@@ -61,7 +61,7 @@ export const trilhas = [
         duracao: "0,5h",
         altitude: "186 m",
         descricao: "A Fazenda Magé é localizada a 3km do centro da cidade de Quixadá, um ambiente rodeado pela natureza e pelos monólitos",
-        imagem: "/src/assets/magé.png",
+        imagem: "/assets/mage.png",
         linkMapa: "https://www.google.com/maps?q=Galinha+Choca+Quixadá"
     },
     {
@@ -74,7 +74,7 @@ export const trilhas = [
         duracao: "2h",
         altitude: "227 m",
         descricao: "A trilha inicia na rodovia BR-122, percorrida em caminho de terra, o trajeto possui longa elevação e descida. Passa por áreas de floresta e arbustos, vegetação rasteira e caatinga, percorrida em estrada sinuosa, com vistas para lindas imagens de montanhas. ",
-        imagem: "/src/assets/barney.png",
+        imagem: "/assets/barney.png",
         linkMapa: "https://www.google.com/maps?q=Pedra+da+Galinha+Pacatuba"
     },
     {
@@ -87,7 +87,7 @@ export const trilhas = [
         duracao: "2,7h",
         altitude: "292 m",
         descricao: "Trilha localizada no exuberante complexo de monólitos do Açude do Cedro em Quixadá. A caminhada oferece vistas deslumbrantes da região e termina em uma formação rochosa com ventilação constante.",
-        imagem: "/src/assets/caverna-dos-ventos.jpg",
+        imagem: "/assets/caverna-dos-ventos.jpg",
         linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
     },
     {
@@ -100,59 +100,7 @@ export const trilhas = [
         duracao: "0,6h",
         altitude: "259 m",
         descricao: "O caminho leva a uma formação rochosa peculiar que se assemelha ao rosto de uma bruxa, cruzando corredores de pedras e exigindo atenção com rochas soltas.",
-        imagem: "/src/assets/bruxa.jpg",
+        imagem: "/assets/bruxa.jpg",
         linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
     }
-//     {
-//         id: 9,
-//         nome: "Galinha Choca",
-//         cidade: "Quixadá",
-//         estado: "CE",
-//         dificuldade: "Média",
-//         distancia: "4,61 km",
-//         duracao: "1,5h",
-//         altitude: "416 m",
-//         descricao: "A trilha símbolo de Quixadá. Uma pedra perfeitamente equilibrada no topo cria a silhueta inconfundível de uma galinha chocando. Fácil acesso para toda a família.",
-//         imagem: "/src/assets/galinha-choca.jpg",
-//         linkMapa: "https://www.google.com/maps?q=Galinha+Choca+Quixadá"
-//     },
-//     {
-//         id: 10,
-//         nome: "Lemos",
-//         cidade: "Quixadá",
-//         estado: "CE",
-//         dificuldade: "Fácil",
-//         distancia: "1,76 km",
-//         duracao: "0,5h",
-//         altitude: "220 m",
-//         descricao: "Uma trilha tranquila e de fácil acesso que nos leva a um dos cenários mais icônicos de Quixadá: a famosa Caverna do Lemos.",
-//         imagem: "/src/assets/lemos.jpg",
-//         linkMapa: "https://www.google.com/maps?q=Pedra+da+Galinha+Pacatuba"
-//     },
-//     {
-//         id: 11,
-//         nome: "Pedra Riscada",
-//         cidade: "Quixadá",
-//         estado: "CE",
-//         dificuldade: "Difícil",
-//         distancia: "2,99 km",
-//         duracao: "2,5h",
-//         altitude: "412 m",
-//         descricao: "A Trilha da Pedra Riscada é um percurso desafiador para quem busca aventura, famoso por dar acesso a grandes paredes rochosas conhecidas internacionalmente para a prática de escalada.",
-//         imagem: "/src/assets/pedra riscada.png",
-//         linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
-//     },
-//     {
-//         id: 12,
-//         nome: "Cânion dos Apertados",
-//         cidade: "Quixadá",
-//         estado: "CE",
-//         dificuldade: "Difícil",
-//         distancia: "6 km",
-//         duracao: "3–4h",
-//         altitude: "320 m",
-//         descricao: "Trecho rochoso e estreito que exige preparo físico, com passagens entre formações rochosas impressionantes.",
-//         imagem: "/src/assets/canion-apertados.jpg",
-//         linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
-//     }
  ];
