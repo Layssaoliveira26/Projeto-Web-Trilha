@@ -23,8 +23,12 @@ p {
 }
 
 /* Estilização da parte de trilhas */
+.aba-trilhas {
+    padding-top: 6rem;
+}
+
 .titulo-trilhas {
-    padding: 2rem 3rem 2rem 3rem;
+    padding: 0 3rem 2rem 3rem;
 }
 
 .dificuldade-trilhas {
@@ -73,7 +77,12 @@ p {
     padding-bottom: 1rem;
 }
 
-/* Imagem + badge */
+.card:hover {
+  transform: scale(1.04); 
+  transition: transform 0.4s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+}
+
 .card-imagem {
     position: relative;
 }

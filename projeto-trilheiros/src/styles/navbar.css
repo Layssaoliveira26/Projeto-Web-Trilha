@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   background-color: var(--cor-fundo);
   box-sizing: border-box;
   z-index: 999;
@@ -121,6 +121,11 @@ body {
 
 .btn-inscreva:active {
   transform: translateY(0);
+}
+
+.btn-inscrever {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 900px) {

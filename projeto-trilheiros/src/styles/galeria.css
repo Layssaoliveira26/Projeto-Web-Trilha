@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --preto: #0e0c0b;
+  --preto-card: #1a1714;
+  --laranja: #e8870e;
+  --branco: #f5f0e6;
+  --texto-suave: #b8b0a4;
+
+  --fonte-display: "Bebas Neue", sans-serif;
+  --fonte-corpo: "Poppins", sans-serif;
+
+  --raio: 14px;
+  --transicao: 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--preto);
+  color: var(--branco);
+  font-family: var(--fonte-corpo);
+}
+
+.galeria-header {
+  padding: 7rem 6vw 1.5rem;
+}
+
+.galeria-header__eyebrow {
+  font-family: var(--fonte-corpo);
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  font-size: 1rem;
+  color: var(--laranja);
+}
+
+.galeria-header__titulo {
+  font-family: var(--fonte-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  margin-top: 2px;
+  color: var(--branco);
+}
+
+.galeria {
+  padding: 24px 6vw 80px;
+  column-count: 4;
+  column-gap: 18px;
+}
+
+.galeria__item {
+  position: relative;
+  margin-bottom: 18px;
+  border-radius: var(--raio);
+  overflow: hidden;
+  break-inside: avoid;
+  background: var(--preto-card);
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s var(--transicao),
+    transform 0.7s var(--transicao);
+}
+
+.galeria__item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.galeria__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.35s var(--transicao);
+  cursor: pointer;
+}
+
+.galeria__item:hover img {
+  transform: scale(1.12);
+}
+
+.galeria__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.62) 0%, transparent 45%);
+  pointer-events: none;
+}
+
+.galeria__legenda {
+  position: absolute;
+  left: 14px;
+  bottom: 12px;
+  z-index: 1;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--branco);
+}
+
+@media (max-width: 1100px) {
+  .galeria {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 760px) {
+  .galeria {
+    column-count: 2;
+    column-gap: 12px;
+  }
+  .galeria__item {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria {
+    column-count: 1;
+  }
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--laranja);
+  outline-offset: 3px;
+}
