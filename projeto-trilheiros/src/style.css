@@ -14,7 +14,7 @@ body {
 
 h2 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 52px;
+    font-size: 4rem;
 }
 
 p {
@@ -24,7 +24,7 @@ p {
 
 /* Estilização da parte de trilhas */
 .titulo-trilhas {
-    padding: 3rem 3rem 2rem 3rem;
+    padding: 2rem 3rem 2rem 3rem;
 }
 
 .dificuldade-trilhas {
@@ -39,7 +39,7 @@ p {
     margin-left: 10px;
     border: 1px solid rgba(128, 122, 122, 0.596);
     border-radius: 24px;
-    font-size: 14px;
+    font-size: 0.95rem;
     font-weight: 600;
     color: #6b6459;
 }

@@ -1,4 +1,4 @@
-import { trilhas } from "../mocks/trilhas-mock.js";
+import { trilhas } from "../../mocks/trilhas-mock.js";
 
 function getClasseDificuldade(dificuldade) {
     const mapa = {

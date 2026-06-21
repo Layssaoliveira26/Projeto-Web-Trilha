@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .container-principal {
     display: flex;
     height: 100vh; 
@@ -15,7 +9,7 @@
 
 .lado-esquerdo {
     flex: 1;
-    padding: 4rem 10%;
+    padding: 3rem 3rem;
     display: flex;
     flex-direction: column;
     
@@ -151,7 +145,7 @@
     flex: 1; 
     background-color: #D87A0F; 
     
-    background-image: url('../assets/ChatGPT Image 12 de jun. de 2026, 07_04_45 1.svg');
+    background-image: url('../assets/pedra-galinha.svg');
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
