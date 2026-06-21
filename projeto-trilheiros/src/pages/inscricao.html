@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Trilheiros na Pedra</title>
+    <link rel="stylesheet" href="inscricao.css">
+</head>
+<body>
+    <div class="container-principal">
+        
+        <div class="lado-esquerdo">
+            <div class="infors">
+                <h3>FICHA DE INSCRIÇÃO</h3>
+                <h2>GARANTA SUA VAGA NA TRILHA</h2>
+                <p>Preencha os dados abaixo para participar da próxima expedição do grupo. Vagas limitadas!</p>
+            </div>
+
+            <div class="forms">
+                <form action="">
+                    <label for="name">NOME COMPLETO*</label>
+                    <input type="text" id="name" name="name" required placeholder="Ex: Maria Silva Souza">
+
+                    <label for="idade">IDADE*</label>
+                    <input type="number" id="idade" name="idade" required placeholder="Ex: 24">
+
+                    <label for="telefone">TELEFONE / WHATSAPP*</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="Ex: (88) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}">
+
+                    <label for="e-mail">E-MAIL*</label>
+                    <input type="email" id="e-mail" name="e-mail" required placeholder="Ex: seuemail@email.com">
+
+                    <label for="moradia">CIDADE / BAIRRO DE RESIDÊNCIA*</label>
+                    <input type="text" id="moradia" name="moradia" required placeholder="Ex: Quixadá / Centro">
+
+                    <label for="trilha">TRILHA DESEJADA*</label>
+                    <select name="trilha" id="trilha" required>
+                        <option value="" disabled selected>selecione uma trilha</option>
+                        <option value="trilha1">Galinha Choca</option>
+                        <option value="trilha2">Açude do Cedro</option>
+                        <option value="trilha3">Pedra do Frade</option>
+                        <option value="trilha4">Trilha da Esfinge</option>
+                    </select>
+
+                    <label>NÍVEL DE EXPERIÊNCIA*</label>
+                    <div class="grupo-radios">
+                        <input type="radio" id="iniciante" name="nExp" value="iniciante" checked>
+                        <label for="iniciante">Iniciante</label>
+                        
+                        <input type="radio" id="intermediario" name="nExp" value="intermediario">
+                        <label for="intermediario">Intermediário</label>
+                        
+                        <input type="radio" id="avancado" name="nExp" value="avancado">
+                        <label for="avancado">Avançado</label>
+                    </div>
+
+                    <label for="saude">CONDIÇÃO DE SAÚDE RELEVANTE (OPCIONAL)</label>
+                    <textarea name="saude" id="saude" placeholder="Descreva qualquer condição de saúde relevante..."></textarea>
+
+                    <label for="contatoEmergencia">CONTATO DE EMERGÊNCIA*</label>
+                    <input type="text" id="contatoEmergencia" name="contatoEmergencia"  required placeholder="Ex: João Silva - (88) 99999-9999">
+
+                    <button type="submit">CONFIRMAR INSCRIÇÃO</button>
+                    
+                    <p class="aviso-rodape">Ao se inscrever, você concorda em seguir as orientações de segurança do grupo durante a trilha.</p>
+                </form>
+            </div>
+        </div>
+
+        <div class="lado-direito">
+            <div class="citacao-box">
+                <p>“A trilha não é sobre chegar ao topo, é sobre quem você se torna no caminho até lá.”</p>
+                <span>Grupo Trilheiros na Pedra</span>
+            </div>
+        </div>
+
+    </div>
+
+    </div> <script src="inscricao.js"></script>
+</body>
+</html>

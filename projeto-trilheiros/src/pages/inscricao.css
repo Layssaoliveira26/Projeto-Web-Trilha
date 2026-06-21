@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-principal {
+    display: flex;
+    height: 100vh; 
+    overflow: hidden;
+    background-color: #F7F4EE;
+}
+
+.lado-esquerdo {
+    flex: 1;
+    padding: 4rem 10%;
+    display: flex;
+    flex-direction: column;
+    
+    overflow-y: auto; 
+    height: 100%;
+}
+
+.infors {
+    margin-bottom: 2.5rem;
+}
+
+.infors h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #D87A0F; 
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.infors h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000000; 
+    font-size: 4rem;
+    line-height: 1;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.infors p {
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.forms form {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #1a1a1a;
+    margin-bottom: 0.4rem;
+    margin-top: 1.2rem;
+    text-transform: uppercase;
+}
+
+.forms label:first-child {
+    margin-top: 0;
+}
+
+.forms input[type="text"],
+.forms input[type="number"],
+.forms input[type="tel"],
+.forms input[type="email"],
+.forms select,
+.forms textarea {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.forms input:focus,
+.forms select:focus,
+.forms textarea:focus {
+    border-color: #D87A0F; 
+}
+
+.forms textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.grupo-radios {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.grupo-radios input[type="radio"] {
+    margin-right: 0.3rem;
+    accent-color: #D87A0F; 
+}
+
+.grupo-radios label {
+    margin-top: 0;
+    text-transform: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.forms button {
+    background-color: #D87A0F;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    padding: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: background-color 0.3s;
+}
+
+.forms button:hover {
+    background-color: #b8660b;
+}
+
+.aviso-rodape {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    color: #1a1a1a;
+    margin-top: 1rem;
+    text-align: left;
+    opacity: 0.8;
+}
+
+.lado-direito {
+    flex: 1; 
+    background-color: #D87A0F; 
+    
+    background-image: url('../assets/ChatGPT Image 12 de jun. de 2026, 07_04_45 1.svg');
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: flex-end; 
+    justify-content: flex-end; 
+    padding: 3rem;
+}
+
+.citacao-box {
+    position: fixed; 
+    bottom: 2rem; 
+    right: 2rem; 
+    max-width: 320px;
+    text-align: left;
+    z-index: 100;
+    
+    background-color: rgba(26, 26, 26, 0.8); 
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.citacao-box p {
+    font-family: 'Poppins', sans-serif;
+    color: #F7F4EE; 
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.citacao-box span {
+    font-family: 'Poppins', sans-serif;
+    color: #D87A0F;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+    .container-principal {
+        flex-direction: column;
+        height: auto; 
+        overflow: visible;
+    }
+
+    .lado-esquerdo {
+        height: auto;
+        overflow-y: visible; 
+        padding: 2rem 5%; 
+    }
+
+    .lado-direito {
+        min-height: 250px; 
+        order: -1; 
+        background-position: center bottom; 
+    }
+
+    .citacao-box {
+        position: relative; 
+        bottom: auto;
+        right: auto;
+        margin: 1rem;
+    }
+}
