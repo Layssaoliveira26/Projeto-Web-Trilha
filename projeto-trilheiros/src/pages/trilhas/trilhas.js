@@ -64,19 +64,25 @@ function renderizarCards(lista) {
     });
 }
 
+function marcarFiltroAtivo(filtroAtivo) {
+    document.querySelectorAll(".p-nivel").forEach((botao) => {
+        botao.classList.toggle("ativo", botao.textContent.trim() === filtroAtivo);
+    });
+}
+
 document.querySelectorAll(".p-nivel").forEach(botao => {
     botao.addEventListener("click", () => {
         const nivel = botao.textContent.trim();
+        marcarFiltroAtivo(nivel);
 
         if (nivel === "Todas") {
             renderizarCards(trilhas);
-            botao.classList.add("ativo");
         } else {
             const filtradas = trilhas.filter(t => t.dificuldade === nivel);
             renderizarCards(filtradas);
-            botao.classList.add("ativo");
         }
     });
 });
 
+marcarFiltroAtivo("Todas");
 renderizarCards(trilhas);
