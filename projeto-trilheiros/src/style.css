@@ -1,37 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #F7F4EE;
-    
+  background-color: #f7f4ee;
 }
 
 h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 4rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4rem;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
-    color: #383530;
+  font-family: "Poppins", sans-serif;
+  color: #383530;
 }
 
 /* Tela Inicial */
 :root {
-  --orange: #D87A0F;
-  --cream: #F7F4EE;
+  --orange: #d87a0f;
+  --cream: #f7f4ee;
   --dark: #1a1a1a;
   --black: #000;
   --white: #fff;
 
-  --display: 'Bebas Neue', sans-serif;
-  --body: 'Poppins', sans-serif;
+  --display: "Bebas Neue", sans-serif;
+  --body: "Poppins", sans-serif;
 }
 
 * {
@@ -62,41 +61,41 @@ body {
 .hero__diagonal {
   position: absolute;
   left: 50rem;
-  top: -96.36px;
+  bottom: -80px;
   width: 834.78px;
   height: 1131.51px;
   background: var(--orange);
   transform: rotate(8deg);
-  transform-origin: top left;
+  transform-origin: bottom left;
   z-index: 1;
 }
 
 .hero__image {
   position: absolute;
-  left: 810px;
-  top: 200px;
-  width: 567px;
-  transform: scale(1.8);
+  right: 0;
+  bottom: -150px;
+  margin-right: 2rem;
+  height: calc(100% + 80px);
+  width: auto;
   z-index: 2;
 }
 
 .hero__image img {
-  width: 100%;
+  display: block;
+  width: auto;
   height: 100%;
-  object-fit: cover;
-  object-position: bottom center;
 }
 
 .hero__content {
   position: relative;
   z-index: 3;
-  height: 100vh;
+  height: 100%;
   max-width: 600px;
-  margin-top: 1rem;
   padding-left: 3rem;
+  padding-top: clamp(110px, 18vh, 220px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .hero__title {
@@ -108,6 +107,67 @@ body {
 
 .hero__title span {
   color: var(--orange);
+}
+
+.hero__onda {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 200px;
+  z-index: 4;
+}
+
+@media (max-width: 960px) {
+  .hero__onda {
+    height: 100px;
+  }
+
+  .hero__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: min(70vw, 520px);
+    height: auto;
+    z-index: 1;
+  }
+
+  .hero__image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: bottom right;
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 3;
+    width: min(90vw, 600px);
+    max-width: 600px;
+    height: auto;
+    padding-top: clamp(90px, 14vh, 180px);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__onda {
+    height: 36px;
+  }
+
+  .hero__image {
+    margin-top: 20px;
+    width: min(60vw, 260px);
+    height: auto;
+    right: 1rem;
+    z-index: 1;
+  }
+
+  .hero__content {
+    width: min(90vw, 520px);
+    max-width: 520px;
+    z-index: 3;
+  }
 }
 
 .hero__stats {
@@ -270,35 +330,69 @@ body {
 /* responsivo */
 
 @media (max-width: 1024px) {
-  .hero__title { font-size: 96px; }
-  .hero__stats { gap: 32px; }
-  .stat__number { font-size: 38px; }
-  .about__grid { grid-template-columns: 1fr; gap: 56px; }
+  .hero__title {
+    font-size: 96px;
+  }
+  .hero__stats {
+    gap: 32px;
+  }
+  .stat__number {
+    font-size: 38px;
+  }
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
 }
 
 @media (max-width: 960px) {
-  .hero__diagonal {
-    left: 0;
-    top: auto;
-    bottom: -40%;
-    width: 140%;
-    height: 60%;
-    transform: rotate(-6deg);
-    transform-origin: bottom left;
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
-    .hero__image {
+  .hero__diagonal {
     left: 0;
+    right: 0;
+    top: auto;
+    bottom: -40px;
+    width: 100%;
+    height: 46vh;
+    transform: none;
+  }
+
+  .hero__image {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: -10vw;
+    margin-right: 0;
+    width: min(70vw, 520px);
+    height: auto;
+    max-height: 60vh;
+    transform: none;
+    z-index: 3;
+    transition:
+      width 0.3s ease,
+      height 0.3s ease;
+  }
+
+  .hero__image img {
     width: 100%;
     height: 100%;
-    transform: none;
-    transition: left 0.3s ease, width 0.3s ease, transform 0.3s ease;
-    }
+    object-fit: contain;
+    object-position: bottom right;
+  }
 
   .hero__content {
+    position: relative;
+    z-index: 2;
     height: auto;
     max-width: none;
-    padding: 14vw 6vw 45vh;
+    padding: 110px 6vw 0;
+    flex: 1;
   }
 
   .hero__stats {
@@ -307,216 +401,258 @@ body {
     flex-wrap: wrap;
   }
 
-  .stat__number { font-size: 32px; }
+  .stat__number {
+    font-size: 32px;
+  }
 
-  .about { padding: 72px 6vw; }
-  .about__title { font-size: 36px; }
-  .geo-card { padding: 28px; }
+  .about {
+    padding: 72px 6vw;
+  }
+  .about__title {
+    font-size: 36px;
+  }
+  .geo-card {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__title {
+    font-size: 64px;
+  }
+
+  .hero__content {
+    padding: 90px 6vw 0;
+  }
+
+  .hero__diagonal {
+    bottom: -20px;
+    height: 38vh;
+  }
+
+  .hero__image {
+    bottom: -12vw;
+    width: min(60vw, 260px);
+    height: auto;
+    max-height: 55vh;
+    z-index: 5;
+  }
+
+  .hero__stats {
+    gap: 18px;
+  }
+
+  .stat__number {
+    font-size: 28px;
+  }
+  .stat__label {
+    font-size: 10px;
+  }
 }
 
 /* Estilização da parte de trilhas */
 .aba-trilhas {
-    padding-top: 6rem;
+  padding-top: 6rem;
 }
 
 .titulo-trilhas {
-    padding: 0 3rem 2rem 3rem;
+  padding: 0 3rem 2rem 3rem;
 }
 
 .dificuldade-trilhas {
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    padding: 2rem 3rem 2rem 3rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem 2rem 3rem;
 }
 
 .p-nivel {
-    padding: 4px 20px ;
-    margin-left: 10px;
-    border: 1px solid rgba(128, 122, 122, 0.596);
-    border-radius: 24px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #D87A0F;
+  padding: 4px 20px;
+  margin-left: 10px;
+  border: 1px solid rgba(128, 122, 122, 0.596);
+  border-radius: 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #d87a0f;
 }
 
 .p-nivel.ativo {
-    background-color: #1a1a1a;
+  background-color: #1a1a1a;
 }
 
 .hr-inicial {
-    border: none;
-    height: 3px;
-    background-color: #D87A0F;
+  border: none;
+  height: 3px;
+  background-color: #d87a0f;
 }
 
 /* Grid responsivo dos cards */
 .cards-trilhas {
-    width: 100%;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 4rem;
-    padding: 2rem 3rem;
-    align-items: stretch;
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 4rem;
+  padding: 2rem 3rem;
+  align-items: stretch;
 }
 
 .card {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    padding-bottom: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding-bottom: 1rem;
 }
 
 .card:hover {
-  transform: scale(1.04); 
+  transform: scale(1.04);
   transition: transform 0.4s ease;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-imagem {
-    position: relative;
+  position: relative;
 }
 
 .card-imagem img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
 }
 
 .badge-dificuldade {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    background-color: #d8f3dc;
-    color: #2d6a4f;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    padding: 4px 10px;
-    border-radius: 20px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #d8f3dc;
+  color: #2d6a4f;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
 }
 
 .area-card-texto {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1.5rem 0 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem 0 1.5rem;
 }
 
 .localizacao {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #797777;
-    letter-spacing: 0.5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #797777;
+  letter-spacing: 0.5px;
 }
 
 .titulo-trilha {
-    font-size: 1.1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin: 0.2rem 0 0.2rem 0;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0.2rem 0 0.2rem 0;
 }
 
 hr {
-    border: none;
-    border-top: 1px solid #dad8d8;
-    margin: 0;
+  border: none;
+  border-top: 1px solid #dad8d8;
+  margin: 0;
 }
 
 .info-trilha {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
 }
 
 .info-item {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    position: relative;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: relative;
 }
 
 .info-item:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 30px;
-    background-color: #e0e0e0;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 30px;
+  background-color: #e0e0e0;
 }
 
 .info-item strong {
-    font-size: 1rem;
-    color: #1a1a1a;
+  font-size: 1rem;
+  color: #1a1a1a;
 }
 
 .info-item span {
-    font-size: 0.65rem;
-    color: #797777;
-    letter-spacing: 0.5px;
+  font-size: 0.65rem;
+  color: #797777;
+  letter-spacing: 0.5px;
 }
 
 .descricao {
-    font-size: 0.9rem;
-    color: #555;
-    line-height: 1.5;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
 }
 
 .localizacao-maps {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 1rem 0 0 0;
-    text-decoration: none;
-    margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1rem 0 0 0;
+  text-decoration: none;
+  margin-top: auto;
 }
 
 .localizacao-maps span:last-child {
-    font-size: 0.9rem;
-    color: #e76f51;
-    font-weight: 600;
-    cursor: pointer;
+  font-size: 0.9rem;
+  color: #e76f51;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .img-mapa {
-    max-width: 20px;
+  max-width: 20px;
 }
 
 .badge-dificuldade {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    padding: 4px 10px;
-    border-radius: 20px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
 }
 
 .badge-facil {
-    background-color: #d8f3dc;
-    color: #2d6a4f;
+  background-color: #d8f3dc;
+  color: #2d6a4f;
 }
 
 .badge-media {
-    background-color: #fff3c4;
-    color: #8a6d00;
+  background-color: #fff3c4;
+  color: #8a6d00;
 }
 
 .badge-dificil {
-    background-color: #fbd5d5;
-    color: #c0392b;
+  background-color: #fbd5d5;
+  color: #c0392b;
 }
