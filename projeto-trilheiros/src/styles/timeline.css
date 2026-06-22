@@ -141,3 +141,35 @@ body {
     text-align: left;
   }
 }
+
+.tl-timeline__linha {
+  transform-origin: top center;
+  transform: translateX(-50%) scaleY(0);
+  transition: transform 1.2s ease;
+}
+
+.tl-timeline__linha.visivel {
+  transform: translateX(-50%) scaleY(1);
+}
+
+.tl-timeline__nodo {
+  opacity: 0;
+  transform: translateX(-50%) scale(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.tl-timeline__nodo.visivel {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.tl-timeline__item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tl-timeline__item.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}

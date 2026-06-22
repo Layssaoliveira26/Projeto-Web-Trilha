@@ -41,7 +41,6 @@ async function initNavbar() {
     container.innerHTML = await response.text();
     const menuToggle = container.querySelector(".menu-toggle");
     const navbar = container.querySelector(".navbar");
-    const botaoInscreva = container.querySelector(".btn-inscreva");
     if (menuToggle && navbar) {
       menuToggle.addEventListener("click", () => {
         const expanded = menuToggle.getAttribute("aria-expanded") === "true";
@@ -53,12 +52,6 @@ async function initNavbar() {
         navbar.classList.toggle("nav-open");
       });
     }
-
-    // if (botaoInscreva) {
-    //   botaoInscreva.addEventListener("click", {
-    //     window.location.href="";
-    //   });
-    // }
 
     console.log("Navbar injetado com sucesso");
   } catch (error) {
@@ -141,6 +134,7 @@ async function initTimeline() {
     }
 
     container.innerHTML = conteudo.outerHTML;
+    animarTimeline();
     console.log("Timeline injetada com sucesso");
   } catch (error) {
     console.error("Erro ao carregar timeline:", error);
@@ -176,3 +170,35 @@ async function initFooter() {
 
 document.addEventListener("DOMContentLoaded", initFooter);
 
+function animarTimeline() {
+  const linha = document.querySelector('.tl-timeline__linha');
+  const nodos = document.querySelectorAll('.tl-timeline__nodo');
+  const itens = document.querySelectorAll('.tl-timeline__item');
+
+  const observadorLinha = new IntersectionObserver(([entrada]) => {
+    if (entrada.isIntersecting) {
+      linha.classList.add('visivel');
+      observadorLinha.disconnect();
+    }
+  }, { threshold: 0.1 });
+
+  observadorLinha.observe(linha);
+
+  const observadorItens = new IntersectionObserver((entradas) => {
+    entradas.forEach(entrada => {
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add('visivel');
+
+        const indice = [...itens].indexOf(entrada.target);
+        const nodo = nodos[indice];
+        if (nodo) {
+          setTimeout(() => nodo.classList.add('visivel'), 200);
+        }
+
+        observadorItens.unobserve(entrada.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  itens.forEach(item => observadorItens.observe(item));
+}

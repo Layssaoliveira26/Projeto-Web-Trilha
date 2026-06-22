@@ -3,64 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/styles/navbar.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
     <div id="navbar-container"></div>
 
     <section class="hero" id="hero">
+
       <div class="hero__diagonal"></div>
 
-      <div class="hero__image">
-        <img
-          src="public/assets/galinhachoca.svg"
-          alt="Ilustração de trilheiros escalando um pico rochoso com uma águia voando ao lado"
-        />
-      </div>
-
-      <div class="hero__content">
-        <h1 class="hero__title">
-          DESBRAVANDO <br />
-          <span>MONÓLITOS</span>
-        </h1>
-
-        <div class="hero__stats">
-          <div class="stat">
-            <span class="stat__number">13+</span>
-            <span class="stat__label">TRILHAS MAPEADAS</span>
-          </div>
-          <div class="stat">
-            <span class="stat__number">3</span>
-            <span class="stat__label">NÍVEIS DE DIFICULDADE</span>
-          </div>
-          <div class="stat">
-            <span class="stat__number">4</span>
-            <span class="stat__label">ANOS DE GRUPO</span>
-          </div>
+        <div class="hero__image">
+          <img src="public/assets/galinhachoca.svg" alt="Ilustração de trilheiros escalando um pico rochoso com uma águia voando ao lado">
         </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title">
+            DESBRAVANDO <br>
+            <span>MONÓLITOS</span>
+          </h1>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__number">13+</span>
+              <span class="stat__label">TRILHAS MAPEADAS</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">3</span>
+              <span class="stat__label">NÍVEIS DE DIFICULDADE</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">4</span>
+              <span class="stat__label">ANOS DE GRUPO</span>
+            </div>
+          </div>
       </div>
 
-      <svg
-        class="hero__onda"
-        viewBox="0 0 1440 70"
-        preserveAspectRatio="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,70 L0,70 Z"
-          fill="#1a1a1a"
-        ></path>
-      </svg>
+      <div class="hero__wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#0e0b05"/>
+        </svg>
+      </div>
+      
     </section>
 
     <section class="about" id="sobre">
       <div class="about__grid">
+
         <div class="about__text-col">
           <div class="eyebrow">
             <span></span>
@@ -71,54 +62,44 @@
 
           <div class="about__text">
             <p>
-              Conhecida popularmente como a "Rainha do Sertão Central", Quixadá
-              torna-se marcante no território cearense pela beleza única das
-              suas paisagens com formações rochosas, pelos açudes que espelham o
-              pôr do sol e pelos pontos históricos que são tesouros culturais do
-              Ceará. São cartões postais da cidade a Pedra da Galinha Choca, o
-              Açude do Cedro, os monólitos dentro de um cenário sertanejo, o
-              Santuário da Mãe Rainha, o Memorial da escritora Rachel de
-              Queiroz.
+              Conhecida popularmente como a "Rainha do Sertão Central", Quixadá torna-se
+              marcante no território cearense pela beleza única das suas paisagens com
+              formações rochosas, pelos açudes que espelham o pôr do sol e pelos pontos
+              históricos que são tesouros culturais do Ceará. São cartões postais da cidade
+              a Pedra da Galinha Choca, o Açude do Cedro, os monólitos dentro de um cenário
+              sertanejo, o Santuário da Mãe Rainha, o Memorial da escritora Rachel de Queiroz.
             </p>
             <p>
-              Este conjunto de atrações visuais repleto de significado tem
-              atraído turistas do estado, do Brasil e do mundo inteiro. Mas não
-              apenas com o intuito de passeio: há grupos que se aventuram por
-              solo quixadaense para os desafios dos esportes de aventura.
+              Este conjunto de atrações visuais repleto de significado tem atraído turistas
+              do estado, do Brasil e do mundo inteiro. Mas não apenas com o intuito de
+              passeio: há grupos que se aventuram por solo quixadaense para os desafios dos
+              esportes de aventura.
             </p>
           </div>
         </div>
 
         <div class="geo-card">
           <h3>Dados Geográficos</h3>
-          <hr />
+          <hr>
 
           <div class="geo-grid">
             <div class="geo-item">
-              <img src="public/assets/pin.svg" alt="" class="geo-item__icon" />
+              <img src="public/assets/pin.svg" alt="" class="geo-item__icon">
               <strong>Ceará</strong>
               <small>Localização</small>
             </div>
             <div class="geo-item">
-              <img src="public/assets/sun.svg" alt="" class="geo-item__icon" />
+              <img src="public/assets/sun.svg" alt="" class="geo-item__icon">
               <strong>Semiárido</strong>
               <small>Clima</small>
             </div>
             <div class="geo-item">
-              <img
-                src="public/assets/scaling.svg"
-                alt=""
-                class="geo-item__icon"
-              />
+              <img src="public/assets/scaling.svg" alt="" class="geo-item__icon">
               <strong>189 metros</strong>
               <small>Altitude</small>
             </div>
             <div class="geo-item">
-              <img
-                src="public/assets/cactus.svg"
-                alt=""
-                class="geo-item__icon"
-              />
+              <img src="public/assets/cactus.svg" alt="" class="geo-item__icon">
               <strong>Caatinga</strong>
               <small>Bioma</small>
             </div>
@@ -131,15 +112,17 @@
             <p>Distância de 167 KM da capital</p>
           </div>
         </div>
+
       </div>
     </section>
 
     <section class="tf-trilhas" id="secao-trilhas">
-      <div class="tf-container"></div>
+      <div class="tf-container">
+          </div>
     </section>
 
     <section class="tl-historia-wrapper" id="secao-timeline"></section>
-
+    
     <div id="footer-container"></div>
     <script type="module" src="src/main.js"></script>
   </body>
