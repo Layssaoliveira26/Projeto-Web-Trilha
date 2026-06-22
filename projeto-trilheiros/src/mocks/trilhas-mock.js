@@ -5,7 +5,7 @@ export const trilhas = [
         cidade: "Quixadá",
         estado: "CE",
         dificuldade: "Média",
-        distancia: "4,61 km",
+        distancia: "4,23 km",
         duracao: "1,5h",
         altitude: "416 m",
         descricao: "A trilha símbolo de Quixadá. Uma pedra perfeitamente equilibrada no topo cria a silhueta inconfundível de uma galinha chocando. Fácil acesso para toda a família.",
@@ -66,15 +66,15 @@ export const trilhas = [
     },
     {
         id: 6,
-        nome: "Barney",
+        nome: "Pedra do Cruzeiro",
         cidade: "Quixadá",
         estado: "CE",
-        dificuldade: "Média",
-        distancia: "2,39 km",
-        duracao: "2h",
-        altitude: "227 m",
-        descricao: "A trilha inicia na rodovia BR-122, percorrida em caminho de terra, o trajeto possui longa elevação e descida. Passa por áreas de floresta e arbustos, vegetação rasteira e caatinga, percorrida em estrada sinuosa, com vistas para lindas imagens de montanhas. ",
-        imagem: "/assets/barney.png",
+        dificuldade: "Fácil",
+        distancia: "0,6 km",
+        duracao: "0,3h",
+        altitude: "190 m",
+        descricao: "Está localizada no centro da cidade de Quixadá. Originalmente chamada de Pedra Grande da Lagoa, seu nome atual deriva da cruz de concreto erguida no topo em 1934.",
+        imagem: "/assets/pedra-cruzeiro.jpg",
         linkMapa: "https://www.google.com/maps?q=Pedra+da+Galinha+Pacatuba"
     },
     {
@@ -101,6 +101,19 @@ export const trilhas = [
         altitude: "259 m",
         descricao: "O caminho leva a uma formação rochosa peculiar que se assemelha ao rosto de uma bruxa, cruzando corredores de pedras e exigindo atenção com rochas soltas.",
         imagem: "/assets/bruxa.jpg",
+        linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
+    },
+    {
+        id: 9,
+        nome: "Baleia/Serra Baleia",
+        cidade: "Quixadá",
+        estado: "CE",
+        dificuldade: "Difícil",
+        distancia: "2,67 km",
+        duracao: "3,5h",
+        altitude: "591 m",
+        descricao: "É um impressionante monólito localizado em Quixadá, no sertão cearense. Famosa por seu formato peculiar, destaca-se por ser uma rocha de composição diferente dos tradicionais cristais da região.",
+        imagem: "/assets/pedra-baleia.png",
         linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
     }
  ];
