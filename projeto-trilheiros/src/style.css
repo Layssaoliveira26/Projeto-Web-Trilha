@@ -338,6 +338,7 @@ body {
     font-size: 0.95rem;
     font-weight: 600;
     color: #D87A0F;
+    cursor: pointer;
 }
 
 .p-nivel.ativo {

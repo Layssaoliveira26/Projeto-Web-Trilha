@@ -23,7 +23,7 @@ export const trilhas = [
         altitude: "220 m",
         descricao: "Uma trilha tranquila e de fácil acesso que nos leva a um dos cenários mais icônicos de Quixadá: a famosa Caverna do Lemos.",
         imagem: "/assets/lemos.jpg",
-        linkMapa: "https://www.google.com/maps?q=Pedra+da+Galinha+Pacatuba"
+        linkMapa: "https://maps.app.goo.gl/EoAdpu3beCKisLKe6"
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ export const trilhas = [
         altitude: "412 m",
         descricao: "A Trilha da Pedra Riscada é um percurso desafiador para quem busca aventura, famoso por dar acesso a grandes paredes rochosas conhecidas internacionalmente para a prática de escalada.",
         imagem: "/assets/pedra-riscada.png",
-        linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
+        linkMapa: "https://maps.app.goo.gl/p1b1TneWFJPSuPGFA"
     },
     {
         id: 4,
@@ -49,7 +49,7 @@ export const trilhas = [
         altitude: "330 m",
         descricao: "A Trilha da Psicose é um percurso de ecoturismo e aventura famoso pelas formações rochosas. A rota leva os visitantes até a famosa Janelinha da Psicose e é frequentemente combinada com a prática de rapel.",
         imagem: "/assets/trilha-psicose.jpg",
-        linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
+        linkMapa: "https://maps.app.goo.gl/zjWzm8hgpDdppwxa7"
     },
     {
         id: 5,
@@ -62,7 +62,7 @@ export const trilhas = [
         altitude: "186 m",
         descricao: "A Fazenda Magé é localizada a 3km do centro da cidade de Quixadá, um ambiente rodeado pela natureza e pelos monólitos",
         imagem: "/assets/mage.png",
-        linkMapa: "https://www.google.com/maps?q=Galinha+Choca+Quixadá"
+        linkMapa: "https://maps.app.goo.gl/ytm52s2WfCua7V9MA"
     },
     {
         id: 6,
@@ -75,7 +75,7 @@ export const trilhas = [
         altitude: "190 m",
         descricao: "Está localizada no centro da cidade de Quixadá. Originalmente chamada de Pedra Grande da Lagoa, seu nome atual deriva da cruz de concreto erguida no topo em 1934.",
         imagem: "/assets/pedra-cruzeiro.jpg",
-        linkMapa: "https://www.google.com/maps?q=Pedra+da+Galinha+Pacatuba"
+        linkMapa: "https://maps.app.goo.gl/iTGtaxQ9wjngsNUd9"
     },
     {
         id: 7,
@@ -88,7 +88,7 @@ export const trilhas = [
         altitude: "292 m",
         descricao: "Trilha localizada no exuberante complexo de monólitos do Açude do Cedro em Quixadá. A caminhada oferece vistas deslumbrantes da região e termina em uma formação rochosa com ventilação constante.",
         imagem: "/assets/caverna-dos-ventos.jpg",
-        linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
+        linkMapa: "https://maps.app.goo.gl/eRd4dTmstkUXp8DX7"
     },
     {
         id: 8,
@@ -101,7 +101,7 @@ export const trilhas = [
         altitude: "259 m",
         descricao: "O caminho leva a uma formação rochosa peculiar que se assemelha ao rosto de uma bruxa, cruzando corredores de pedras e exigindo atenção com rochas soltas.",
         imagem: "/assets/bruxa.jpg",
-        linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
+        linkMapa: "https://maps.app.goo.gl/Lxoe8Rmi6mqYLP7L7"
     },
     {
         id: 9,
@@ -114,6 +114,6 @@ export const trilhas = [
         altitude: "591 m",
         descricao: "É um impressionante monólito localizado em Quixadá, no sertão cearense. Famosa por seu formato peculiar, destaca-se por ser uma rocha de composição diferente dos tradicionais cristais da região.",
         imagem: "/assets/pedra-baleia.png",
-        linkMapa: "https://www.google.com/maps?q=Canion+dos+Apertados+Quixada"
+        linkMapa: "https://maps.app.goo.gl/48thB1iBC3mMW5APA"
     }
  ];
