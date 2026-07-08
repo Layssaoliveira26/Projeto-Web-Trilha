@@ -1,119 +1,159 @@
+const imagemGalinhaChoca = new URL(
+  "../../public/assets/galinha-choca.jpg",
+  import.meta.url,
+).href;
+const imagemLemos = new URL("../../public/assets/lemos.jpg", import.meta.url)
+  .href;
+const imagemPedraRiscada = new URL(
+  "../../public/assets/pedra-riscada.png",
+  import.meta.url,
+).href;
+const imagemPsicose = new URL(
+  "../../public/assets/Pedra-Psicose.jpg",
+  import.meta.url,
+).href;
+const imagemMage = new URL("../../public/assets/mage.png", import.meta.url)
+  .href;
+const imagemPedraCruzeiro = new URL(
+  "../../public/assets/pedra-cruzeiro.jpg",
+  import.meta.url,
+).href;
+const imagemCavernaVentos = new URL(
+  "../../public/assets/caverna-dos-ventos.jpg",
+  import.meta.url,
+).href;
+const imagemBruxa = new URL("../../public/assets/bruxa.jpg", import.meta.url)
+  .href;
+const imagemPedraBaleia = new URL(
+  "../../public/assets/pedra-baleia.png",
+  import.meta.url,
+).href;
+
 export const trilhas = [
-    {
-        id: 1,
-        nome: "Galinha Choca",
-        cidade: "Quixadá",
-        estado: "CE",
-        dificuldade: "Média",
-        distancia: "4,23 km",
-        duracao: "1,5h",
-        altitude: "416 m",
-        descricao: "A trilha símbolo de Quixadá. Uma pedra perfeitamente equilibrada no topo cria a silhueta inconfundível de uma galinha chocando. Fácil acesso para toda a família.",
-        imagem: "/assets/galinha-choca.jpg",
-        linkMapa: "https://www.google.com/maps?q=Galinha+Choca+Quixadá"
-    },
-    {
-        id: 2,
-        nome: "Lemos",
-        cidade: "Quixadá",
-        estado: "CE",
-        dificuldade: "Fácil",
-        distancia: "1,76 km",
-        duracao: "0,5h",
-        altitude: "220 m",
-        descricao: "Uma trilha tranquila e de fácil acesso que nos leva a um dos cenários mais icônicos de Quixadá: a famosa Caverna do Lemos.",
-        imagem: "/assets/lemos.jpg",
-        linkMapa: "https://maps.app.goo.gl/EoAdpu3beCKisLKe6"
-    },
-    {
-        id: 3,
-        nome: "Pedra Riscada",
-        cidade: "Quixadá",
-        estado: "CE",
-        dificuldade: "Difícil",
-        distancia: "2,99 km",
-        duracao: "2,5h",
-        altitude: "412 m",
-        descricao: "A Trilha da Pedra Riscada é um percurso desafiador para quem busca aventura, famoso por dar acesso a grandes paredes rochosas conhecidas internacionalmente para a prática de escalada.",
-        imagem: "/assets/pedra-riscada.png",
-        linkMapa: "https://maps.app.goo.gl/p1b1TneWFJPSuPGFA"
-    },
-    {
-        id: 4,
-        nome: "Psicose",
-        cidade: "Quixadá",
-        estado: "CE",
-        dificuldade: "Média",
-        distancia: "1,98 km",
-        duracao: "1,5h",
-        altitude: "330 m",
-        descricao: "A Trilha da Psicose é um percurso de ecoturismo e aventura famoso pelas formações rochosas. A rota leva os visitantes até a famosa Janelinha da Psicose e é frequentemente combinada com a prática de rapel.",
-        imagem: "/assets/trilha-psicose.jpg",
-        linkMapa: "https://maps.app.goo.gl/zjWzm8hgpDdppwxa7"
-    },
-    {
-        id: 5,
-        nome: "Magé/Barriguda",
-        cidade: "Quixadá",
-        estado: "CE",
-        dificuldade: "Média",
-        distancia: "0,86 km",
-        duracao: "0,5h",
-        altitude: "186 m",
-        descricao: "A Fazenda Magé é localizada a 3km do centro da cidade de Quixadá, um ambiente rodeado pela natureza e pelos monólitos",
-        imagem: "/assets/mage.png",
-        linkMapa: "https://maps.app.goo.gl/ytm52s2WfCua7V9MA"
-    },
-    {
-        id: 6,
-        nome: "Pedra do Cruzeiro",
-        cidade: "Quixadá",
-        estado: "CE",
-        dificuldade: "Fácil",
-        distancia: "0,6 km",
-        duracao: "0,3h",
-        altitude: "190 m",
-        descricao: "Está localizada no centro da cidade de Quixadá. Originalmente chamada de Pedra Grande da Lagoa, seu nome atual deriva da cruz de concreto erguida no topo em 1934.",
-        imagem: "/assets/pedra-cruzeiro.jpg",
-        linkMapa: "https://maps.app.goo.gl/iTGtaxQ9wjngsNUd9"
-    },
-    {
-        id: 7,
-        nome: "Caverna dos Ventos",
-        cidade: "Quixadá",
-        estado: "CE",
-        dificuldade: "Média",
-        distancia: "3,16 km",
-        duracao: "2,7h",
-        altitude: "292 m",
-        descricao: "Trilha localizada no exuberante complexo de monólitos do Açude do Cedro em Quixadá. A caminhada oferece vistas deslumbrantes da região e termina em uma formação rochosa com ventilação constante.",
-        imagem: "/assets/caverna-dos-ventos.jpg",
-        linkMapa: "https://maps.app.goo.gl/eRd4dTmstkUXp8DX7"
-    },
-    {
-        id: 8,
-        nome: "Cabeça da Bruxa",
-        cidade: "Quixadá",
-        estado: "CE",
-        dificuldade: "Média",
-        distancia: "0,8 km",
-        duracao: "0,6h",
-        altitude: "259 m",
-        descricao: "O caminho leva a uma formação rochosa peculiar que se assemelha ao rosto de uma bruxa, cruzando corredores de pedras e exigindo atenção com rochas soltas.",
-        imagem: "/assets/bruxa.jpg",
-        linkMapa: "https://maps.app.goo.gl/Lxoe8Rmi6mqYLP7L7"
-    },
-    {
-        id: 9,
-        nome: "Baleia/Serra Baleia",
-        cidade: "Quixadá",
-        estado: "CE",
-        dificuldade: "Difícil",
-        distancia: "2,67 km",
-        duracao: "3,5h",
-        altitude: "591 m",
-        descricao: "É um impressionante monólito localizado em Quixadá, no sertão cearense. Famosa por seu formato peculiar, destaca-se por ser uma rocha de composição diferente dos tradicionais cristais da região.",
-        imagem: "/assets/pedra-baleia.png",
-        linkMapa: "https://maps.app.goo.gl/48thB1iBC3mMW5APA"
-    }
- ];
+  {
+    id: 1,
+    nome: "Galinha Choca",
+    cidade: "Quixadá",
+    estado: "CE",
+    dificuldade: "Média",
+    distancia: "4,23 km",
+    duracao: "1,5h",
+    altitude: "416 m",
+    descricao:
+      "A trilha símbolo de Quixadá. Uma pedra perfeitamente equilibrada no topo cria a silhueta inconfundível de uma galinha chocando. Fácil acesso para toda a família.",
+    imagem: imagemGalinhaChoca,
+    linkMapa: "https://www.google.com/maps?q=Galinha+Choca+Quixadá",
+  },
+  {
+    id: 2,
+    nome: "Lemos",
+    cidade: "Quixadá",
+    estado: "CE",
+    dificuldade: "Fácil",
+    distancia: "1,76 km",
+    duracao: "0,5h",
+    altitude: "220 m",
+    descricao:
+      "Uma trilha tranquila e de fácil acesso que nos leva a um dos cenários mais icônicos de Quixadá: a famosa Caverna do Lemos.",
+    imagem: imagemLemos,
+    linkMapa: "https://maps.app.goo.gl/EoAdpu3beCKisLKe6",
+  },
+  {
+    id: 3,
+    nome: "Pedra Riscada",
+    cidade: "Quixadá",
+    estado: "CE",
+    dificuldade: "Difícil",
+    distancia: "2,99 km",
+    duracao: "2,5h",
+    altitude: "412 m",
+    descricao:
+      "A Trilha da Pedra Riscada é um percurso desafiador para quem busca aventura, famoso por dar acesso a grandes paredes rochosas conhecidas internacionalmente para a prática de escalada.",
+    imagem: imagemPedraRiscada,
+    linkMapa: "https://maps.app.goo.gl/p1b1TneWFJPSuPGFA",
+  },
+  {
+    id: 4,
+    nome: "Psicose",
+    cidade: "Quixadá",
+    estado: "CE",
+    dificuldade: "Média",
+    distancia: "1,98 km",
+    duracao: "1,5h",
+    altitude: "330 m",
+    descricao:
+      "A Trilha da Psicose é um percurso de ecoturismo e aventura famoso pelas formações rochosas. A rota leva os visitantes até a famosa Janelinha da Psicose e é frequentemente combinada com a prática de rapel.",
+    imagem: imagemPsicose,
+    linkMapa: "https://maps.app.goo.gl/zjWzm8hgpDdppwxa7",
+  },
+  {
+    id: 5,
+    nome: "Magé/Barriguda",
+    cidade: "Quixadá",
+    estado: "CE",
+    dificuldade: "Média",
+    distancia: "0,86 km",
+    duracao: "0,5h",
+    altitude: "186 m",
+    descricao:
+      "A Fazenda Magé é localizada a 3km do centro da cidade de Quixadá, um ambiente rodeado pela natureza e pelos monólitos",
+    imagem: imagemMage,
+    linkMapa: "https://maps.app.goo.gl/ytm52s2WfCua7V9MA",
+  },
+  {
+    id: 6,
+    nome: "Pedra do Cruzeiro",
+    cidade: "Quixadá",
+    estado: "CE",
+    dificuldade: "Fácil",
+    distancia: "0,6 km",
+    duracao: "0,3h",
+    altitude: "190 m",
+    descricao:
+      "Está localizada no centro da cidade de Quixadá. Originalmente chamada de Pedra Grande da Lagoa, seu nome atual deriva da cruz de concreto erguida no topo em 1934.",
+    imagem: imagemPedraCruzeiro,
+    linkMapa: "https://maps.app.goo.gl/iTGtaxQ9wjngsNUd9",
+  },
+  {
+    id: 7,
+    nome: "Caverna dos Ventos",
+    cidade: "Quixadá",
+    estado: "CE",
+    dificuldade: "Média",
+    distancia: "3,16 km",
+    duracao: "2,7h",
+    altitude: "292 m",
+    descricao:
+      "Trilha localizada no exuberante complexo de monólitos do Açude do Cedro em Quixadá. A caminhada oferece vistas deslumbrantes da região e termina em uma formação rochosa com ventilação constante.",
+    imagem: imagemCavernaVentos,
+    linkMapa: "https://maps.app.goo.gl/eRd4dTmstkUXp8DX7",
+  },
+  {
+    id: 8,
+    nome: "Cabeça da Bruxa",
+    cidade: "Quixadá",
+    estado: "CE",
+    dificuldade: "Média",
+    distancia: "0,8 km",
+    duracao: "0,6h",
+    altitude: "259 m",
+    descricao:
+      "O caminho leva a uma formação rochosa peculiar que se assemelha ao rosto de uma bruxa, cruzando corredores de pedras e exigindo atenção com rochas soltas.",
+    imagem: imagemBruxa,
+    linkMapa: "https://maps.app.goo.gl/Lxoe8Rmi6mqYLP7L7",
+  },
+  {
+    id: 9,
+    nome: "Baleia/Serra Baleia",
+    cidade: "Quixadá",
+    estado: "CE",
+    dificuldade: "Difícil",
+    distancia: "2,67 km",
+    duracao: "3,5h",
+    altitude: "591 m",
+    descricao:
+      "É um impressionante monólito localizado em Quixadá, no sertão cearense. Famosa por seu formato peculiar, destaca-se por ser uma rocha de composição diferente dos tradicionais cristais da região.",
+    imagem: imagemPedraBaleia,
+    linkMapa: "https://maps.app.goo.gl/48thB1iBC3mMW5APA",
+  },
+];

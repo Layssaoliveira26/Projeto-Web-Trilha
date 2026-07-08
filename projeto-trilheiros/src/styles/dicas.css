@@ -50,7 +50,7 @@ img {
     var(--laranja-escuro) 100%
   );
   width: 100%;
-  padding: clamp(5rem, 9vw, 8rem) 6vw clamp(7rem, 10vw, 11rem);
+  padding: clamp(2rem, 9vw, 8rem) 6vw clamp(6rem, 10vw, 11rem);
   text-align: center;
   overflow: hidden;
   isolation: isolate;
