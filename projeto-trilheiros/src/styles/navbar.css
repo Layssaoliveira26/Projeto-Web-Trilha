@@ -15,9 +15,14 @@ body {
   padding: 0;
 }
 
+body {
+  padding-top: 4rem;
+}
+
 .navbar {
   position: fixed;
   top: 0;
+  height: 5rem;
   left: 0;
   width: 100%;
   display: flex;
